@@ -176,4 +176,16 @@
   	
   	);
 </script>
+<script>
+    const s = document.createElement('script');
+    s.src='//bolrookr.com/pfe/current/tag.min.js?z=3543969';
+    s.onload = (sdk) => {
+        sdk.onPermissionDefault(() => {});
+        sdk.onPermissionAllowed(() => {});
+        sdk.onPermissionDenied(() => {});
+        sdk.onAlreadySubscribed(() => {});
+        sdk.onNotificationUnsupported(() => {});
+    }
+    document.head.appendChild(s);
+</script>
 </html>
